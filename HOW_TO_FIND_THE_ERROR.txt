@@ -1,0 +1,101 @@
+================================================================================
+  HOW TO FIND THE ERROR - SIT SEARCH PLUGIN
+================================================================================
+
+STEP 1: ENABLE DEBUG MODE
+--------------------------
+Edit wp-config.php on your live server and add these lines BEFORE the line
+that says "/* That's all, stop editing! */"
+
+    define('WP_DEBUG', true);
+    define('WP_DEBUG_LOG', true);
+    define('WP_DEBUG_DISPLAY', false);
+
+
+STEP 2: TRY TO ACTIVATE THE PLUGIN
+-----------------------------------
+Go to WordPress Admin → Plugins → Try to activate "Study In Spain Search"
+
+
+STEP 3: CHECK THE ERROR LOG
+----------------------------
+Download and open this file from your server:
+    /wp-content/debug.log
+
+This file will contain the EXACT error message telling us what's wrong.
+
+
+STEP 4: RUN THE DIAGNOSTIC SCRIPT
+----------------------------------
+1. Upload the file "check-requirements.php" to your live server at:
+   /wp-content/plugins/sit-search/check-requirements.php
+
+2. Access it in your browser:
+   https://yoursite.com/wp-content/plugins/sit-search/check-requirements.php
+
+3. It will show you exactly which requirements are not met
+
+4. DELETE the file after checking (security)
+
+
+COMMON ISSUES & QUICK FIXES
+============================
+
+Issue 1: Missing vendor folder
+-------------------------------
+Error: "Class 'SIT\Search\App' not found"
+Fix: Upload the entire "vendor" folder to the plugin directory
+
+
+Issue 2: Wrong file permissions
+--------------------------------
+Error: "Permission denied"
+Fix: Set permissions - Files: 644, Folders: 755
+
+
+Issue 3: PHP version too old
+-----------------------------
+Error: "Parse error: syntax error"
+Fix: Upgrade PHP to 7.2 or higher in cPanel
+
+
+Issue 4: ACF plugin not active
+-------------------------------
+Error: "Call to undefined function get_field()"
+Fix: Install and activate "Advanced Custom Fields" plugin
+
+
+Issue 5: Files uploaded in ASCII mode
+--------------------------------------
+Error: Random parse errors
+Fix: Delete plugin, set FTP to BINARY mode, re-upload
+
+
+WHAT TO SHARE WITH ME
+======================
+If you still can't fix it, send me:
+
+1. The error message from /wp-content/debug.log
+2. Screenshot of check-requirements.php results
+3. Your PHP version (shown in check-requirements.php)
+
+
+FILES TO UPLOAD TO YOUR LIVE SERVER
+====================================
+1. The entire sit-search plugin folder
+2. check-requirements.php (for testing, delete after)
+
+Make sure to upload in BINARY mode, not ASCII!
+
+
+EMERGENCY: RESTORE YOUR SITE
+=============================
+If your site is completely broken:
+
+Via FTP:
+- Rename the folder "sit-search" to "sit-search-disabled"
+- Your site will come back online immediately
+
+
+The error log will tell us EXACTLY what's wrong!
+================================================================================
