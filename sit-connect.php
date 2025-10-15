@@ -111,6 +111,9 @@ function sit_connect_init_github_updater() {
         // Set the branch to check for updates (optional, defaults to 'main')
         $myUpdateChecker->setBranch('main');
         
+        // Check for updates more frequently (every 1 hour instead of 12)
+        $myUpdateChecker->checkForUpdates();
+        
         // For private repositories, use GitHub token from wp-config.php
         if (defined('SIT_CONNECT_GITHUB_TOKEN')) {
             $myUpdateChecker->setAuthentication(SIT_CONNECT_GITHUB_TOKEN);
