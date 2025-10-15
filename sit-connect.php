@@ -67,7 +67,7 @@ if (!function_exists('sc_fs')) {
 }
 
 // Plugin Constants
-define('SIT_CONNECT_VERSION', '2.0.0');
+define('SIT_CONNECT_VERSION', '2.0.1');
 define('SIT_CONNECT_FILE', __FILE__);
 define('SIT_CONNECT_DIR', plugin_dir_path(__FILE__));
 define('SIT_CONNECT_URL', plugin_dir_url(__FILE__));
@@ -96,7 +96,7 @@ add_action('plugins_loaded', 'sit_connect_init_github_updater');
 
 function sit_connect_init_github_updater() {
     // Check if Plugin Update Checker library exists
-    $puc_path = SIT_CONNECT_DIR . 'vendor/plugin-update-checker/plugin-update-checker.php';
+    $puc_path = SIT_CONNECT_DIR . 'vendor/yahnis-elsts/plugin-update-checker/plugin-update-checker.php';
     
     if (file_exists($puc_path)) {
         require $puc_path;
