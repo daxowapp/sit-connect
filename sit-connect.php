@@ -4,7 +4,7 @@
  * Plugin Name: SIT Connect
  * Plugin URI: https://sitconnect.com
  * Description: A powerful university and program management plugin with CRM integration, customizable colors, and advanced search capabilities. Perfect for educational institutions and study abroad agencies.
- * Version: 2.0.0
+ * Version: 2.0.1
  * Author: Sabeeh
  * Author URI: https://sabeeh.dev
  * License: GPL2
