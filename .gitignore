@@ -1,0 +1,55 @@
+# Composer
+/vendor/
+composer.lock
+
+# WordPress
+wp-config.php
+.htaccess
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+/logs/
+
+# Temporary files
+*.tmp
+*.bak
+*.cache
+
+# Node modules (if you use npm/yarn)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Build files
+/build/
+/dist/
+
+# Sensitive data
+*.pem
+*.key
+*.env
+.env.local
+
+# Freemius (optional - if you want to exclude it)
+# /freemius/
+
+# Test files
+check-san-pablo.php
+test-*.php
+*-test.php
+
+# Duplicate files
+*" 2.php"
+*" 2.js"
+*" 2.css"

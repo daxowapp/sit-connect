@@ -1,0 +1,6 @@
+sit-search-clean.php.backup
+sit-search-fixed-header.php.backup
+sit-search.php.backup
+sit-search-strings.txt
+sit-search-strings 2.txt
+sit-search-fixed-header 2.php
