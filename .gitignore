@@ -1,5 +1,9 @@
 # Composer
-/vendor/
+# Include only plugin-update-checker for auto-updates
+/vendor/*
+!/vendor/yahnis-elsts/
+!/vendor/composer/
+!/vendor/autoload.php
 composer.lock
 
 # WordPress
