@@ -196,25 +196,25 @@
           <div class="apply-form-row">
             <div class="apply-form-group">
               <label class="apply-form-label">First Name <span class="apply-form-required">*</span></label>
-              <input type="text" name="first_name" class="apply-form-control" required placeholder="Enter your first name">
+              <input type="text" name="first_name" class="apply-form-control" required placeholder="<?php echo esc_attr__('Enter your first name', 'sit-connect'); ?>">
             </div>
             
             <div class="apply-form-group">
               <label class="apply-form-label">Last Name <span class="apply-form-required">*</span></label>
-              <input type="text" name="last_name" class="apply-form-control" required placeholder="Enter your last name">
+              <input type="text" name="last_name" class="apply-form-control" required placeholder="<?php echo esc_attr__('Enter your last name', 'sit-connect'); ?>">
             </div>
           </div>
           
           <div class="apply-form-row">
             <div class="apply-form-group">
               <label class="apply-form-label">Email Address <span class="apply-form-required">*</span></label>
-              <input type="email" name="email" class="apply-form-control" required placeholder="Enter your email address">
+              <input type="email" name="email" class="apply-form-control" required placeholder="<?php echo esc_attr__('Enter your email address', 'sit-connect'); ?>">
             </div>
             
             <div class="apply-form-group">
               <label class="apply-form-label">Phone Number <span class="apply-form-required">*</span></label>
               <div class="phone-input-container">
-                <input type="tel" name="phone" id="phone" class="apply-form-control" required placeholder="Enter your phone number">
+                <input type="tel" name="phone" id="phone" class="apply-form-control" required placeholder="<?php echo esc_attr__('Enter your phone number', 'sit-connect'); ?>">
               </div>
             </div>
           </div>

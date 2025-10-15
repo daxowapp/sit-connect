@@ -6,7 +6,7 @@
 
         <div class="col-md-12 text-center">
 
-            <h2 class="apply-title">Consultation</h2>
+            <h2 class="apply-title"><?php esc_html_e('Consultation', 'sit-connect'); ?></h2>
 
         </div>
 
@@ -20,7 +20,7 @@
 
                     <div class="col-md-6">
 
-                        <label class="form-label">First Name <span class="text-danger">*</span></label>
+                        <label class="form-label"><?php esc_html_e('First Name', 'sit-connect'); ?> <span class="text-danger">*</span></label>
 
                         <input type="text" name="first_name" class="form-control custom-input" required>
 
@@ -28,7 +28,7 @@
 
                     <div class="col-md-6">
 
-                        <label class="form-label">Last Name <span class="text-danger">*</span></label>
+                        <label class="form-label"><?php esc_html_e('Last Name', 'sit-connect'); ?> <span class="text-danger">*</span></label>
 
                         <input type="text" name="last_name" class="form-control custom-input" required>
 
@@ -36,7 +36,7 @@
 
                     <div class="col-md-12">
 
-                        <label class="form-label">Email Address <span class="text-danger">*</span></label>
+                        <label class="form-label"><?php esc_html_e('Email Address', 'sit-connect'); ?> <span class="text-danger">*</span></label>
 
                         <input type="email" name="email" class="form-control custom-input" required>
 
@@ -44,7 +44,7 @@
 
                     <div class="col-md-12">
 
-                        <label class="form-label">Phone Number <span class="text-danger">*</span></label>
+                        <label class="form-label"><?php esc_html_e('Phone Number', 'sit-connect'); ?> <span class="text-danger">*</span></label>
 
                         <input type="tel" name="phone" class="form-control custom-input" required>
 
@@ -52,7 +52,7 @@
 
                     <div class="col-md-12">
 
-                        <label class="form-label">Preferred study Level</label>
+                        <label class="form-label"><?php esc_html_e('Preferred study Level', 'sit-connect'); ?></label>
 
                         <select class="form-select custom-input" name="study_level">
                             <option>Please select</option>
@@ -66,7 +66,7 @@
                     </div>
                     <div class="col-md-12">
 
-                        <label class="form-label">Preferred study Year</label>
+                        <label class="form-label"><?php esc_html_e('Preferred study Year', 'sit-connect'); ?></label>
 
                         <select class="form-select custom-input" name="study_year">
 
@@ -83,7 +83,7 @@
 
 
 
-                <button type="submit" class="btn btn-danger apply-btn">Apply Now</button>
+                <button type="submit" class="btn btn-danger apply-btn"><?php esc_html_e('Apply Now', 'sit-connect'); ?></button>
 
             </form>
 

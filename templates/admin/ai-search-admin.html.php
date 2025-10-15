@@ -1,46 +1,46 @@
 <div class="wrap">
-    <h1>AI Search Management</h1>
+    <h1><?php esc_html_e('AI Search Management', 'sit-connect'); ?></h1>
     
     <div class="ai-search-admin">
         <div class="card">
-            <h2>Program Embeddings Status</h2>
+            <h2><?php esc_html_e('Program Embeddings Status', 'sit-connect'); ?></h2>
             <div id="embeddings-stats">
-                <p>Loading statistics...</p>
+                <p><?php esc_html_e('Loading statistics...', 'sit-connect'); ?></p>
             </div>
             
             <div class="actions">
                 <button id="generate-embeddings" class="button button-primary">
-                    Generate All Embeddings
+                    <?php esc_html_e('Generate All Embeddings', 'sit-connect'); ?>
                 </button>
                 <button id="refresh-stats" class="button">
-                    Refresh Statistics
+                    <?php esc_html_e('Refresh Statistics', 'sit-connect'); ?>
                 </button>
                 <button id="clear-old-embeddings" class="button button-secondary">
-                    Clear Old Embeddings (30+ days)
+                    <?php esc_html_e('Clear Old Embeddings (30+ days)', 'sit-connect'); ?>
                 </button>
             </div>
             
             <div id="generation-progress" style="display: none;">
-                <h3>Generation Progress</h3>
+                <h3><?php esc_html_e('Generation Progress', 'sit-connect'); ?></h3>
                 <div class="progress-bar">
                     <div class="progress-fill" style="width: 0%"></div>
                 </div>
-                <p id="progress-text">Starting...</p>
+                <p id="progress-text"><?php esc_html_e('Starting...', 'sit-connect'); ?></p>
             </div>
             
             <div id="generation-results" style="display: none;">
-                <h3>Results</h3>
+                <h3><?php esc_html_e('Results', 'sit-connect'); ?></h3>
                 <pre id="results-output"></pre>
             </div>
         </div>
         
         <div class="card">
-            <h2>AI Search Testing</h2>
-            <p>Test the AI search functionality with various queries:</p>
+            <h2><?php esc_html_e('AI Search Testing', 'sit-connect'); ?></h2>
+            <p><?php esc_html_e('Test the AI search functionality with various queries:', 'sit-connect'); ?></p>
             
             <div class="test-search">
-                <input type="text" id="test-query" placeholder="Enter search query (e.g., 'computer sience', 'buisness admin')" style="width: 300px;">
-                <button id="test-search-btn" class="button">Test Search</button>
+                <input type="text" id="test-query" placeholder="<?php echo esc_attr__('Enter search query (e.g., \'computer sience\', \'buisness admin\')', 'sit-connect'); ?>" style="width: 300px;">
+                <button id="test-search-btn" class="button"><?php esc_html_e('Test Search', 'sit-connect'); ?></button>
             </div>
             
             <div id="test-results" style="margin-top: 20px;">
@@ -49,8 +49,8 @@
         </div>
         
         <div class="card">
-            <h2>Common Test Queries</h2>
-            <p>Try these queries to test typo tolerance and semantic understanding:</p>
+            <h2><?php esc_html_e('Common Test Queries', 'sit-connect'); ?></h2>
+            <p><?php esc_html_e('Try these queries to test typo tolerance and semantic understanding:', 'sit-connect'); ?></p>
             <ul>
                 <li><code>computer sience</code> (typo in "science")</li>
                 <li><code>buisness admin</code> (typo in "business")</li>
@@ -67,8 +67,8 @@
 
 <hr>
 
-<h3>Generation Log</h3>
-<pre id="generation-log" style="background-color: #f1f1f1; border: 1px solid #ccc; padding: 10px; height: 200px; overflow-y: scroll; white-space: pre-wrap; margin-top: 1em;">Log messages will appear here...</pre>
+<h3><?php esc_html_e('Generation Log', 'sit-connect'); ?></h3>
+<pre id="generation-log" style="background-color: #f1f1f1; border: 1px solid #ccc; padding: 10px; height: 200px; overflow-y: scroll; white-space: pre-wrap; margin-top: 1em;"><?php esc_html_e('Log messages will appear here...', 'sit-connect'); ?></pre>
 
 </div>
 

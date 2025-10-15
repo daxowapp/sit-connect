@@ -317,25 +317,25 @@ $countries = get_terms([
             <form method="post" style="display: inline;">
                 <?php wp_nonce_field('sit_sync_action', 'sit_sync_nonce'); ?>
                 <input type="hidden" name="sync_action" value="degrees">
-                <button type="submit" class="button sync-button">Sync Degrees</button>
+                <button type="submit" class="button sync-button"><?php esc_html_e('Sync Degrees', 'sit-connect'); ?></button>
             </form>
             
             <form method="post" style="display: inline;">
                 <?php wp_nonce_field('sit_sync_action', 'sit_sync_nonce'); ?>
                 <input type="hidden" name="sync_action" value="faculties">
-                <button type="submit" class="button sync-button">Sync Faculties</button>
+                <button type="submit" class="button sync-button"><?php esc_html_e('Sync Faculties', 'sit-connect'); ?></button>
             </form>
             
             <form method="post" style="display: inline;">
                 <?php wp_nonce_field('sit_sync_action', 'sit_sync_nonce'); ?>
                 <input type="hidden" name="sync_action" value="languages">
-                <button type="submit" class="button sync-button">Sync Languages</button>
+                <button type="submit" class="button sync-button"><?php esc_html_e('Sync Languages', 'sit-connect'); ?></button>
             </form>
             
             <form method="post" style="display: inline;">
                 <?php wp_nonce_field('sit_sync_action', 'sit_sync_nonce'); ?>
                 <input type="hidden" name="sync_action" value="specialities">
-                <button type="submit" class="button sync-button">Sync Specialities</button>
+                <button type="submit" class="button sync-button"><?php esc_html_e('Sync Specialities', 'sit-connect'); ?></button>
             </form>
         </div>
     </div>

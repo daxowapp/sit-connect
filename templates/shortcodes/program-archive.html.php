@@ -642,11 +642,11 @@ $search_value = isset($_GET['search']) && !is_array($_GET['search']) ? $_GET['se
             </h4>
             <div class="price-range-inputs">
                 <div class="price-input-group">
-                    <label class="price-input-label">Min</label>
+                    <label class="price-input-label"><?php esc_html_e('Min', 'sit-connect'); ?></label>
                     <input type="number" class="price-input min-range" placeholder="0" value="">
                 </div>
                 <div class="price-input-group">
-                    <label class="price-input-label">Max</label>
+                    <label class="price-input-label"><?php esc_html_e('Max', 'sit-connect'); ?></label>
                     <input type="number" class="price-input max-range" placeholder="50000" value="">
                 </div>
             </div>
@@ -734,8 +734,8 @@ $search_value = isset($_GET['search']) && !is_array($_GET['search']) ? $_GET['se
             <div class="ProgramArchivePage-search-wrapper">
                 <div class="ProgramArchivePage-search-input">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-                    <input type="text" id="search-university" value="<?= $_GET['search'] ?>" placeholder="Search by name..." />
-                    <button class="ProgramArchivePage-search-button">Go</button>
+                    <input type="text" id="search-university" value="<?= $_GET['search'] ?>" placeholder="<?php echo esc_attr__('Search by name...', 'sit-connect'); ?>" />
+                    <button class="ProgramArchivePage-search-button"><?php esc_html_e('Go', 'sit-connect'); ?></button>
                 </div>
             </div>
             
